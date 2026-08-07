@@ -11,7 +11,6 @@ classdef GPSModel < SensorModel
         function this = GPSModel()
             this@SensorModel('GPS')
             this.ValidTimeRange = [0, inf]; % gps between 0 and N sec
-            this.StopGPSDistance = 0 * 1852; % stop GPS at N nmi, nmi to m
             this.PositionSigma = [1 1 1];
             this.VelocitySigma = [0.1 0.1 0.1];
             this.UpdateRate = 1; % update every n seconds
